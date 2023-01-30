@@ -77,7 +77,7 @@ library(dplyr)
 
 CO2e_by_FY<-Travel%>%
   group_by(FY)%>%
-  summarise(CO2e = sum(Total_CO2e_by_Trip))
+  summarise('CO2e (kg)' = sum(Total_CO2e_by_Trip))
 CO2e_by_FY
 
 
